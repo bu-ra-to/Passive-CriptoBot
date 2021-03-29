@@ -1,7 +1,6 @@
-// global.fetch = require("node-fetch");
 const GeminiAPI = require("gemini-api").default;
 
-const { key, secret } = require("./config/keys");
+const { key, secret } = require("../config/keys.js");
 const restClient = new GeminiAPI({ key, secret, sandbox: true });
 
 async function buyOrder(symbol, price, amount) {
